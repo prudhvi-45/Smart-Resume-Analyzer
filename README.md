@@ -1,86 +1,79 @@
+# Resume Analyzer & Job Recommender
 
-# 💼 Resume Analyzer & Job Recommender
-
-An intelligent Streamlit app that analyzes resumes, extracts key information, and recommends the top 3 relevant jobs with high-quality, **free** online learning resources.
-
-![Streamlit](https://img.shields.io/badge/Streamlit-Enabled-brightgreen?style=for-the-badge&logo=streamlit)
-![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=for-the-badge&logo=python)
+A streamlined Streamlit application that analyzes resumes, extracts relevant skills, and recommends the top three job roles along with curated, **free** online learning resources to help users bridge skill gaps and upskill effectively.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📄 Resume parsing (PDF or TXT)
-- 🧠 Skill extraction (Programming + OS)
-- 🎯 Job + Course matching based on cosine similarity
-- 📚 Shows top 3 courses + free resources (YouTube, Web)
-- 💻 Sleek UI with styled layout
+- Parses resumes in PDF or TXT format  
+- Extracts key skills including programming languages and operating systems  
+- Matches profiles to job roles using cosine similarity  
+- Recommends top 3 relevant courses with free online resources  
+- Clean and user-friendly interface built with Streamlit  
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-├── app.py                   # Streamlit app file
-├── job_courses_updated.csv # Job-skill-course dataset
-├── README.md                # This file
+├── app.py                   # Main application script
+├── job_courses_updated.csv # Dataset containing job roles, skills, and course links
+├── README.md                # Project documentation
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1. Clone this repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/resume-analyzer.git
 cd resume-analyzer
 ```
 
-### 2. Install the dependencies
+### 2. Install Dependencies
+If a `requirements.txt` file is available:
 ```bash
 pip install -r requirements.txt
 ```
-If `requirements.txt` is not available, use:
+
+Otherwise, install manually:
 ```bash
 pip install streamlit pandas scikit-learn PyPDF2
 ```
 
-### 3. Launch the app
+### 3. Launch the Application
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📊 About the Dataset
+## Dataset Overview
 
-The `job_courses_updated.csv` file includes:
-- ✅ `job_title`
-- 🧠 `skills`
-- 🎓 `courses`
-- ▶️ `youtube_link`
-- 🌐 `free_course_link`
-
----
-
-## 🧪 Built With
-
-- Python 🐍
-- Streamlit 🌐
-- scikit-learn 🤖
-- pandas 🧾
-- PyPDF2 📄
+The `job_courses_updated.csv` file includes the following fields:
+- `job_title`: Suggested job roles  
+- `skills`: Required skills for each role  
+- `courses`: Recommended learning resources  
+- `youtube_link`: Tutorial links  
+- `free_course_link`: Additional free online courses  
 
 ---
 
-## 📄 License
+## Technologies Used
 
-Licensed under the [MIT License](LICENSE).
+- Python  
+- Streamlit  
+- scikit-learn  
+- pandas  
+- PyPDF2  
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
-Course and job data sourced from open platforms such as [freeCodeCamp](https://www.freecodecamp.org), [YouTube](https://youtube.com), and [Coursera](https://coursera.org).
-
+The application uses openly available job and course data compiled from platforms such as:
+- [freeCodeCamp](https://www.freecodecamp.org)  
+- [YouTube](https://youtube.com)  
+- [Coursera](https://coursera.org)

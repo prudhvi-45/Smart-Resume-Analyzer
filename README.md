@@ -19,16 +19,6 @@ An intelligent Streamlit app that analyzes resumes, extracts key information, an
 
 ---
 
-## 📷 Screenshots
-
-### 🔼 Resume Upload + Extracted Info
-![Resume Upload](oo=1.png)
-
-### 🎯 Top Job Recommendations
-![Recommendations](00=2.png)
-
----
-
 ## 📁 Project Structure
 
 ```
